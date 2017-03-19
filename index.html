@@ -1,0 +1,127 @@
+---
+layout: home
+first_header_image: /uploads/IMG_2567.jpeg
+second_header_image: uploads/IMG_2573.jpeg
+third_header_image: uploads/header3.jpeg
+gallery:
+  - gallery_image: uploads/IMG_0392.jpeg
+  - gallery_image: uploads/IMG_0395.jpeg
+  - gallery_image: uploads/IMG_0425.jpeg
+  - gallery_image: uploads/IMG_0444.jpeg
+  - gallery_image: uploads/IMG_0446.jpeg
+  - gallery_image: uploads/IMG_0475.jpeg
+  - gallery_image: uploads/IMG_0481.jpeg
+  - gallery_image: /uploads/IMG_0477.jpeg
+  - gallery_image: /uploads/IMG_2570.jpeg
+plan_a_visit:
+  - heading: What are Sunday worship services like?
+    text_markdown: 'After a time of fellowship, we start our service with prayer. As a congregation we sing hymns and choruses. There is special music offered to the Lord as worship. We take up an offering (visitors are not expected to give) and then the pastor or a special speaker will preach from the Scriptures.'
+  - heading: What are Wednesday evenings like?
+    text_markdown: After a time of fellowship we pray and then we teach very basic and practical truths from the Scriptures. Questions are encouraged and answered after the study. Wednesday evenings are more casual than Sunday mornings. Often we have a snack and a cup of coffee.
+  - heading: When do you meet?
+    text_markdown: |-
+      #### Sundays:
+
+      * Sunday School - 10:00AM
+      * Morning Service - 11:00AM
+
+      #### Wednesdays
+
+      * Bible Study - 7:00 PM
+  - heading: What should I wear?
+    text_markdown: We have no dress code. We only ask that you wear something that is comfortable but not distracting to those around you.
+  - heading: Is there anything for my kids?
+    text_markdown: |-
+      We provide the following for children:
+
+      * Nursery is provided for children age 5 and under.
+      * A Sunday school for elementary aged kids.
+      * Wednesday youth programs coming soon.
+      * Occasional youth activities for teenagers
+  - heading: Am I expected to give?
+    text_markdown: 'No. We do take an offering every service, but it is for our members. We do not expect our guests to give anything. You have given us enough by visiting.'
+---
+{% assign settings = settings.data.settings %}
+<nav id="menu">
+    {% include menu.html %}
+</nav>
+
+<main id="panel">
+  <div class="header">
+    <div class="wrapper">
+    <h1><a href="{{site.url}}/"><img src="{{settings.church_logo_image_path}}" alt="{{settings.church_name}}" /></a></h1>
+    <a href="#" class="toggle-button"><span class="fa-stack fa-lg">
+  <i class="fa fa-circle fa-stack-2x"></i>
+  <i class="fa fa-bars fa-stack-1x fa-inverse"></i>
+</span> MENU</a>
+    </div><!--/wrapper-->
+  </div><!--/header-->
+  <div class="hero" style="background: url(uploads/wood.png) center center; ">
+      <div class="main-heading">
+      <div class="heading-images">
+        <div class="image1 header_image">
+          <div class="inner-image" style="background: url({{page.first_header_image}}) no-repeat center center; background-size: cover;">
+            
+          </div><!--/inner-image-->
+        </div><!--/image1-->
+        <div class="image2 header_image">
+          <div class="inner-image" style="background: url({{page.second_header_image}}) no-repeat center center; background-size: cover;">
+            
+          </div><!--/inner-image-->
+        </div><!--/image1-->
+        <div class="image3 header_image">
+          <div class="inner-image" style="background: url({{page.third_header_image}}) no-repeat center center; background-size: cover;">
+            
+          </div><!--/inner-image-->
+        </div><!--/image1-->
+      </div><!--/heading-images-->
+      <h1 class="editable">A Place To Call Home</h1>
+      <p class="editable">If you live in the Stokesdale area we invite you join us for worship and fellowship as we focus our attention on the Word of God. </p>
+      <a href="#" class="hollow button">Plan A Visit</a>
+      </div><!--/main-heading-->
+  </div><!--/hero-->
+  <div class="plan-a-visit">
+    <h2>Plan A Visit</h2>
+    <p class="editable">Visiting a new church can be an intimidating experience.  We want to put you at ease by answering the most common questions people have….</p>
+    <div class="row small-up-1 medium-up-2 visit-sections">
+      {% for section in page.plan_a_visit%}
+      <div class="column section"><h3>{{section.heading}}</h3> {{section.text_markdown | markdownify}}</div><!--/column-->
+      {% endfor %}
+    </div><!--/row small-up etc.-->
+  </div><!--/plan-a-visit-->
+  {% include map.html %}
+  <div class="photos">
+  <div class="photos-inner" id="sqr-gallery">
+     {% for img in page.gallery limit: 12 %}
+        <div class="photo"><a href="#" data-featherlight="{{img.gallery_image}}" style="background: url({{img.gallery_image }}) no-repeat center center; background-size: cover; width: 250px; height: 250px; line-height: 250px; display: block;"></a></div>
+      {% endfor %}
+  </div><!--/photos-inner-->
+</div><!--/gallery-->
+<div class="meet-pastor">
+  {% if site.leaders > 1 %}
+    <h2 class="editable">Our Pastors:</h2>
+{% else %}
+<h2 class="editable">Our Pastor:</h2>
+{% endif %}
+
+  {% for leader in site.leaders %}
+  <div class="leader">
+  <img src="{{ leader.Thumbnail_path }}" alt="{{leader.Name}}" />
+  <h3>{{leader.Name}}</h3>
+  <ul class="social-menu">
+    {% if  leader.Twitter %}
+    <li><a href="{{leader.twitter}}"><img src="uploads/twitter.png" alt="" /></a></li>{% endif %}
+    {% if  leader.Facebook %}
+    <li><a href="{{leader.facebook}}"><img src="uploads/facebook.png" alt="" /></a></li>{% endif %}
+    {% if  leader.Email %}
+    <li><a href="{{leader.email}}"><img src="uploads/email.png" alt="" /></a></li>{% endif %}
+  </ul>  
+  {{ leader.content | truncatewords: 40 }}
+  <br />
+  <a href="{{leader.url}}" class="button">Read More</a>
+  
+  </div><!--/leader--> 
+  {% endfor %}
+</div><!--/Meet-pastor-->
+{% include footer.html %}
+</main>

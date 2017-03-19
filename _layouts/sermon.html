@@ -1,0 +1,168 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{site.data.settings.church_name}} ~ {{page.title}}</title>
+    <link href="//cdn.rawgit.com/noelboss/featherlight/1.5.0/release/featherlight.min.css" type="text/css" rel="stylesheet" />
+    <link rel="stylesheet" href="{{site.url}}/new.css">
+    <script src="https://use.fontawesome.com/00d641a760.js"></script>
+  </head>
+  <body class="secondary-page {{page.class}}">
+  <nav id="menu">
+    {% include menu.html %}
+</nav>
+
+<main id="panel">
+  <div class="header">
+    <div class="wrapper">
+    <h1><a href="{{site.url}}/"><img src="{{settings.church_logo_image_path}}" alt="{{settings.church_name}}" /></a></h1>
+    <a href="#" class="toggle-button"><span class="fa-stack fa-lg">
+  <i class="fa fa-circle fa-stack-2x"></i>
+  <i class="fa fa-bars fa-stack-1x fa-inverse"></i>
+</span> MENU</a>
+    </div><!--/wrapper-->
+  </div><!--/header-->
+  <div class="hero" style="background: url({{site.data.settings.main_image}})center center;">
+  <div class="page-header">
+      <h2><span>Sermons:</span> {{page.sermon_name}}</h2>
+  </div><!--/page-header-->
+  </div><!--/hero-->
+  <div class="main-content">
+
+   <div class="singleSermonHeader">
+    {% if page.series_featured_image %}
+    {% for img in page.series_featured_image %}
+    <img class="singleSermonHeader__mainImage" src="{{ img.url }}" alt="{{page.title}}">
+    {% endfor %}
+    {% else %}
+    <img class="singleSermonHeader__mainImage" src="{{site.url}}/{{site.data.settings.main_sermon_image}}" alt="Series Graphic">
+    {% endif %}
+    
+    <div class="singleSermonHeader__teaser">
+    <div class="singleSermonHeader__title">
+        <h3>{{page.title}}</h3>
+         <ul class="action__buttons">
+                    {% if page.sermon_mp3 %}
+                    {% for item in page.sermon_mp3 %}
+                    <li><a href="{{item.url}}" alt="play"><i class="fa fa-play"></i></a></li>
+                    {% endfor %}
+                    {% endif %}
+                    {% if page.handout %}
+                    {% for item in page.manuscript %}
+                    <li><a href="{{item.manuscript}}" alt="handout"><i class="fa fa-file-pdf-o"></i></a></li>
+                    {% endfor %}
+                    {% endif %}
+                    {% if page.slides %}
+                    {% for item in page.slides %}
+                    <li><a href="{{item.url}}" alt="slides"><i class="fa fa-file-powerpoint-o"></i></a></li>
+                    {% endfor %}
+                    {% endif %}
+                </ul><!--/action__buttons-->
+        </div><!--/sermonslistItem__title-->
+        <ul class="singleSermonHeader__tagline">
+         <li><i class="fa fa-calendar"></i> {{page.date}}</li>
+                <li><i class="fa fa-clock-o"></i> {{page.service}}</li>
+                <li><i class="fa fa-user"></i> {{page.speaker_name}}</li>
+                <li><i class="fa fa-book"></i> {{page.bible_text}}</li>
+        </ul>
+        {% if page.sermon_mp3 %}
+                {% for item in page.sermon_mp3 %}
+                <audio class="sermonslistPlayer" controls>
+                    <source src="{{item.url}}" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                    </audio>
+                <a href="{{item.url}}" class="button warning" target="blank" download><i class="fa fa-download"></i> Download</a>
+                {% endfor %}
+                {% endif %}
+    </div>
+</div> 
+<div class="singleSermonContent">
+{% if page.manuscript %}
+<div style="text-align: center;">
+                    {% for item in page.manuscript %}
+                    <a href="{{item.url}}" alt="download sermon manuscript" class="button large" ><i class="fa fa-file-pdf-o"></i> Download Sermon Manuscript</a>
+                    {% endfor %}
+    </div><!--/empty div for centering-->
+{% endif %}
+{% if page.body_content %}
+
+    {{ page.body_content | markdownify }}
+ 
+
+{% endif %}
+</div><!--/singleSermonContent-->
+ <div class="sermonslistContent singleSermonPage">
+
+   <div class="sermonslistContent__MainList">
+        <h2>More Sermons From This Series:</h2>
+    {% for sermon in site.data.sermons %}
+      {% if sermon.series_title[0] == page.series_title[0] %}
+        <div class="sermonslistItem">
+            <div class="sermonslistItem__teaser">
+            <div class="sermonslistItem__title">
+                <h3><a href="{{ sermon.title | datapage_url: 'sermons' | prepend: site.baseurl | prepend: site.url }}">{{sermon.title}}</a></h3>
+                <ul class="action__buttons">
+                    {% if sermon.sermon_mp3 %}
+                    {% for item in sermon.sermon_mp3 %}
+                    <li><a href="{{item.url}}" alt="play"><i class="fa fa-play"></i></a></li>
+                    {% endfor %}
+                    {% endif %}
+                    {% if sermon.handout %}
+                    {% for item in sermon.handout %}
+                    <li><a href="{{item.url}}" alt="handout"><i class="fa fa-page-pdf"></i></a></li>
+                    {% endfor %}
+                    {% endif %}
+                    {% if sermon.slides %}
+                    {% for item in sermon.slides %}
+                    <li><a href="{{item.url}}" alt="slides"><i class="fa fa-projection-screen"></i></a></li>
+                    {% endfor %}
+                    {% endif %}
+                </ul><!--/action__buttons-->
+                </div><!--/sermonslistItem__title-->
+                <ul class="sermonslistItem__tagline">
+                <li><i class="fa fa-calendar"></i> {{sermon.date}}</li>
+                <li><i class="fa fa-clock-o"></i> {{sermon.service}}</li>
+                <li><i class="fa fa-user"></i> {{sermon.speaker_name}}</li>
+                <li><i class="fa fa-book"></i> {{sermon.bible_text}}</li>
+                </ul>
+                <p class="sermonslistItem__description">{{sermon.body_content | truncate: 140 }}</p>
+                {% if sermon.sermon_mp3 %}
+                {% for item in sermon.sermon_mp3 %}
+                <audio class="sermonslistPlayer" controls>
+                    <source src="{{item.url}}" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                    </audio>
+                <a href="{{item.url}}" class="button secondary" target="blank" download><i class="fa fa-download"></i> Download</a>
+                {% endfor %}
+                {% endif %}
+                <a href="{{ sermon.title | datapage_url: 'sermons' | prepend: site.baseurl | prepend: site.url }}" class="button" >View Sermon</a>
+            </div><!--/sermonslistItem__teaser-->
+        </div><!--/sermonslistItem-->
+        {% endif %}
+     {% endfor %}
+    </div><!--/end main list-->
+</div><!--/sermonslistContent-->
+  </div><!--/main-content-->
+
+  {% include footer.html %}
+</main>
+
+          <script src="https://cdn.jsdelivr.net/jquery/3.1.1/jquery.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
+    <script src="//cdn.rawgit.com/noelboss/featherlight/1.5.0/release/featherlight.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slideout/0.1.12/slideout.min.js"></script>
+    <script>
+    $(document).ready(function(){
+    var slideout = new Slideout({
+    'panel': document.getElementById('panel'),
+    'menu': document.getElementById('menu'),
+    'side': 'right'
+  });
+  document.querySelector('.toggle-button').addEventListener('click', function() {
+  slideout.toggle();});
+});
+    </script>
+  </body>
+</html>

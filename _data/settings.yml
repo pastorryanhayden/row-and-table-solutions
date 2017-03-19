@@ -1,0 +1,31 @@
+church_name: Row and Table Solutions
+church_logo_image_path: /uploads/logo.png
+church_logo2_image_path: /uploads/logo2.jpg
+main_image: /uploads/wood.png
+phone: (336) 423-6031
+church_email: hbcstokesdale@gmail.com
+facebook: 'https://www.facebook.com/heritagebaptistchurchstokesdale/'
+twitter:
+youtube:
+address: 8430 Southard Rd
+address2:
+City: Stokesdale
+State: NC
+Zip: '27357'
+main_blog_image: /uploads/1.jpg
+main_sermon_image: /uploads/2.jpg
+default_calendar_image: /uploads/3.jpg
+services:
+  - name: Sunday School
+    time:
+    day: Sunday
+  - name: Morning Worship
+    time:
+    day: Sunday
+  - name: Bible Study
+    time:
+    day: Wednesday
+lattitude: '36.246743'
+longitude: '-79.949284'
+map_zoom_level: 13
+Google_calendar_id: leonhart4@gmail.com
