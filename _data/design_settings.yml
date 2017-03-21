@@ -4,7 +4,7 @@ main_bright_color: '#FD783D'
 secondary_bright_color: '#1DCB9B'
 main_font: "'Helvetica Neue', Helvetica, Arial, sans-serif"
 main_font_import_code: "@import url('https://fonts.googleapis.com/css?family=Lora:400,400i,700');"
-secondary_font: "'Helvetica Neue', Helvetica, Arial, sans-serif"
+secondary_font: "'Abside', 'Helvetica Neue', Helvetica, Arial, sans-serif"
 secondary_font_import_code: "@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,700');"
 _comments:
   main_font: "i.e. 'Playfair Display', serif - IMPORTANT - leave off the 'font-family' and the trailing semi-colon!"

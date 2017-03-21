@@ -4,9 +4,8 @@
 
 @charset 'utf-8';
 
-{{main_font_import_code}}
-{{secondary_font_import_code}}
 
+@import "components/font";
 
 $main_dark_color: {{site.data.design_settings.main_dark_color}};
 $main_light_color: {{site.data.design_settings.main_light_color}};
@@ -88,7 +87,9 @@ $header-font-style: normal;
 @include motion-ui-transitions;
 @include motion-ui-animations;
 
+
 @import "components/layout";
 @import "components/airtableTo";
 @import "components/port-band";
+@import "components/footer";
  

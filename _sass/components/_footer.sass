@@ -1,0 +1,34 @@
+.footer	
+	display: flex
+	flex-wrap: wrap
+	padding: 20px 
+	+breakpoint(1080px)
+		flex-wrap: no-wrap
+	.state
+		width: 100%
+		padding: 75px
+		border-bottom: 1px solid #000000
+		+breakpoint(1080px)
+			border-right: 1px solid #000000
+			border-bottom: none
+			width: 50%
+		img 
+			float: left 
+			margin-right: 30px
+		h4
+			color: $secondary_bright_color
+			font-family: $secondary_font
+	.brand 
+		text-align: center
+		width: 100%
+		padding: 75px
+		+breakpoint(1080px)
+			width: 50%
+		img 
+			padding-top: 30px
+			padding-bottom: 30px
+		p 
+			font-size: 16px
+			line-height: 18px
+
+
