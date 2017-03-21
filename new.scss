@@ -88,24 +88,7 @@ $header-font-style: normal;
 @include motion-ui-transitions;
 @include motion-ui-animations;
 
-@import "components/slideout";  
-@import "components/slick";  
-@import "components/slick-theme";  
-@import "components/headerHero";
-@import "components/menu";  
-@import "components/planavisit"; 
-@import "components/meetPastor"; 
-@import "components/map"; 
-@import "components/footer"; 
-@import "components/gallery"; 
-@import "components/events"; 
-@import "components/eventpage"; 
-@import "components/sermons";  
-@import "components/secondaryPages"; 
-@import "components/leadership"; 
-@import "components/beliefs"; 
-@import "components/blog-entry";  
-@import "components/blog-list";
-@import "components/sermonsold";  
-@import "components/calendar-list";
-@import "components/header-images";   
+@import "components/layout";
+@import "components/airtableTo";
+@import "components/port-band";
+ 

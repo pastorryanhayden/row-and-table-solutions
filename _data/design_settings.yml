@@ -1,10 +1,10 @@
-main_dark_color: '#08070a'
-main_light_color: '#999999'
-main_bright_color: '#55b4f2'
-secondary_bright_color: '#db434f'
-main_font: "'Lora', serif"
+main_dark_color: '#333333'
+main_light_color: '#ffffff'
+main_bright_color: '#FD783D'
+secondary_bright_color: '#1DCB9B'
+main_font: "'Helvetica Neue', Helvetica, Arial, sans-serif"
 main_font_import_code: "@import url('https://fonts.googleapis.com/css?family=Lora:400,400i,700');"
-secondary_font: "'Open Sans', sans-serif"
+secondary_font: "'Helvetica Neue', Helvetica, Arial, sans-serif"
 secondary_font_import_code: "@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,700');"
 _comments:
   main_font: "i.e. 'Playfair Display', serif - IMPORTANT - leave off the 'font-family' and the trailing semi-colon!"

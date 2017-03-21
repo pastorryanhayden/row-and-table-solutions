@@ -1,127 +1,66 @@
 ---
 layout: home
-first_header_image: /uploads/IMG_2567.jpeg
-second_header_image: uploads/IMG_2573.jpeg
-third_header_image: uploads/header3.jpeg
-gallery:
-  - gallery_image: uploads/IMG_0392.jpeg
-  - gallery_image: uploads/IMG_0395.jpeg
-  - gallery_image: uploads/IMG_0425.jpeg
-  - gallery_image: uploads/IMG_0444.jpeg
-  - gallery_image: uploads/IMG_0446.jpeg
-  - gallery_image: uploads/IMG_0475.jpeg
-  - gallery_image: uploads/IMG_0481.jpeg
-  - gallery_image: /uploads/IMG_0477.jpeg
-  - gallery_image: /uploads/IMG_2570.jpeg
-plan_a_visit:
-  - heading: What are Sunday worship services like?
-    text_markdown: 'After a time of fellowship, we start our service with prayer. As a congregation we sing hymns and choruses. There is special music offered to the Lord as worship. We take up an offering (visitors are not expected to give) and then the pastor or a special speaker will preach from the Scriptures.'
-  - heading: What are Wednesday evenings like?
-    text_markdown: After a time of fellowship we pray and then we teach very basic and practical truths from the Scriptures. Questions are encouraged and answered after the study. Wednesday evenings are more casual than Sunday mornings. Often we have a snack and a cup of coffee.
-  - heading: When do you meet?
-    text_markdown: |-
-      #### Sundays:
-
-      * Sunday School - 10:00AM
-      * Morning Service - 11:00AM
-
-      #### Wednesdays
-
-      * Bible Study - 7:00 PM
-  - heading: What should I wear?
-    text_markdown: We have no dress code. We only ask that you wear something that is comfortable but not distracting to those around you.
-  - heading: Is there anything for my kids?
-    text_markdown: |-
-      We provide the following for children:
-
-      * Nursery is provided for children age 5 and under.
-      * A Sunday school for elementary aged kids.
-      * Wednesday youth programs coming soon.
-      * Occasional youth activities for teenagers
-  - heading: Am I expected to give?
-    text_markdown: 'No. We do take an offering every service, but it is for our members. We do not expect our guests to give anything. You have given us enough by visiting.'
 ---
 {% assign settings = settings.data.settings %}
-<nav id="menu">
-    {% include menu.html %}
-</nav>
 
-<main id="panel">
-  <div class="header">
-    <div class="wrapper">
-    <h1><a href="{{site.url}}/"><img src="{{settings.church_logo_image_path}}" alt="{{settings.church_name}}" /></a></h1>
-    <a href="#" class="toggle-button"><span class="fa-stack fa-lg">
-  <i class="fa fa-circle fa-stack-2x"></i>
-  <i class="fa fa-bars fa-stack-1x fa-inverse"></i>
-</span> MENU</a>
-    </div><!--/wrapper-->
-  </div><!--/header-->
-  <div class="hero" style="background: url(uploads/wood.png) center center; ">
-      <div class="main-heading">
-      <div class="heading-images">
-        <div class="image1 header_image">
-          <div class="inner-image" style="background: url({{page.first_header_image}}) no-repeat center center; background-size: cover;">
-            
-          </div><!--/inner-image-->
-        </div><!--/image1-->
-        <div class="image2 header_image">
-          <div class="inner-image" style="background: url({{page.second_header_image}}) no-repeat center center; background-size: cover;">
-            
-          </div><!--/inner-image-->
-        </div><!--/image1-->
-        <div class="image3 header_image">
-          <div class="inner-image" style="background: url({{page.third_header_image}}) no-repeat center center; background-size: cover;">
-            
-          </div><!--/inner-image-->
-        </div><!--/image1-->
-      </div><!--/heading-images-->
-      <h1 class="editable">A Place To Call Home</h1>
-      <p class="editable">If you live in the Stokesdale area we invite you join us for worship and fellowship as we focus our attention on the Word of God. </p>
-      <a href="#" class="hollow button">Plan A Visit</a>
-      </div><!--/main-heading-->
-  </div><!--/hero-->
-  <div class="plan-a-visit">
-    <h2>Plan A Visit</h2>
-    <p class="editable">Visiting a new church can be an intimidating experience.  We want to put you at ease by answering the most common questions people have….</p>
-    <div class="row small-up-1 medium-up-2 visit-sections">
-      {% for section in page.plan_a_visit%}
-      <div class="column section"><h3>{{section.heading}}</h3> {{section.text_markdown | markdownify}}</div><!--/column-->
-      {% endfor %}
-    </div><!--/row small-up etc.-->
-  </div><!--/plan-a-visit-->
-  {% include map.html %}
-  <div class="photos">
-  <div class="photos-inner" id="sqr-gallery">
-     {% for img in page.gallery limit: 12 %}
-        <div class="photo"><a href="#" data-featherlight="{{img.gallery_image}}" style="background: url({{img.gallery_image }}) no-repeat center center; background-size: cover; width: 250px; height: 250px; line-height: 250px; display: block;"></a></div>
-      {% endfor %}
-  </div><!--/photos-inner-->
-</div><!--/gallery-->
-<div class="meet-pastor">
-  {% if site.leaders > 1 %}
-    <h2 class="editable">Our Pastors:</h2>
-{% else %}
-<h2 class="editable">Our Pastor:</h2>
-{% endif %}
-
-  {% for leader in site.leaders %}
-  <div class="leader">
-  <img src="{{ leader.Thumbnail_path }}" alt="{{leader.Name}}" />
-  <h3>{{leader.Name}}</h3>
-  <ul class="social-menu">
-    {% if  leader.Twitter %}
-    <li><a href="{{leader.twitter}}"><img src="uploads/twitter.png" alt="" /></a></li>{% endif %}
-    {% if  leader.Facebook %}
-    <li><a href="{{leader.facebook}}"><img src="uploads/facebook.png" alt="" /></a></li>{% endif %}
-    {% if  leader.Email %}
-    <li><a href="{{leader.email}}"><img src="uploads/email.png" alt="" /></a></li>{% endif %}
-  </ul>  
-  {{ leader.content | truncatewords: 40 }}
-  <br />
-  <a href="{{leader.url}}" class="button">Read More</a>
-  
-  </div><!--/leader--> 
-  {% endfor %}
-</div><!--/Meet-pastor-->
-{% include footer.html %}
-</main>
+<div class="wrapper">
+<div class="header-hero">
+  {% include navigation.html %}
+  <div class="main-heading">
+    <h1>We Leverage Databases To <br>
+    <span>Supercharge Your Business</span></h1>
+    <hr>
+    <p>We take Airtable and other database tools and create amazing tools to save you time and money.</p>
+    <a href="#" data-featherlight="{{site.url}}/hire.html .hire" class="button large">Hire Us Today</a>
+  </div><!--/main-heading-->
+  </div><!--/header-hero-->
+  <div class="from-airtable">
+    <h2>From Airtable To Anything</h2>
+    <p class="main-lead-in">
+      You love <a href="http://airtable.com">Airtable</a>.  It's a great tool you can use to organize your data.<br>  
+Row & Table can help you <strong>take Airtable to the next level:</strong></p>
+    <div class="features row small-up-1 medium-up-2 large-up-3">
+      <div class="column column-block">
+        <img src="uploads/web.png" alt="">
+        <h4>Website Integration</h4>
+        <p>Integrate Airtable data with an existing or new website.</p>
+      </div><!--/column-->
+      <div class="column column-block">
+        <img src="uploads/doc.png" alt="">
+        <h4>Recurring Documents</h4>
+        <p>Create recurring documents (catologues, programs, bulletins, etc.) based on simple web forms. </p>
+      </div><!--/column-->
+      <div class="column column-block">
+        <img src="uploads/cart.png" alt="" style="margin-top: 16px">
+        <h4>Point of Sale</h4>
+        <p>Use Airtable for point of sale, inventory management, or invoicing.</p>
+      </div><!--/column-->
+      <div class="column column-block">
+        <img src="uploads/email.png" alt="">
+        <h4>Emails &amp; Marketing</h4>
+        <p>Couple Airtable with your email and marketing workflow to save time and money.</p>
+      </div><!--/column-->
+      <div class="column column-block">
+        <img src="uploads/sign.png" alt="" style="margin-top: 10px">
+        <h4>Digital Signage</h4>
+        <p>Create digital signs, dashboards, or menus managed with Airtable.</p>
+      </div><!--/column-->
+      <div class="column column-block">
+        <img src="uploads/tablet.png" alt="">
+        <h4>Anything Else</h4>
+        <p>If you can imagine it with your data, we can probably figure it out.</p>
+      </div><!--/column-->  
+    </div><!--/features-->
+    <p class="lead-out">We can also help you if you outgrow Airtable and want something else.  You can use Airtable to refine and prototype your data and then we can build a custom app once you get your data structure right. 
+</p>
+  <div style="text-align: center;">
+    <a href="#" data-featherlight="{{site.url}}/hire.html .hire" class="button">Call for a Free Consult</a>
+  </div>
+  </div><!--/from airtable-->
+  <div class="portfolio-band">
+    <h3>Check out how we've helped other companies:</h3>
+    <p>Our designers and developers have decades of experience helping businesses like yours.</p>
+    <a href="#" class="button hollow">View Our Portfolio</a>
+    
+  </div><!--/portfolio-band-->
+</div><!--/wrapper-->
