@@ -4,7 +4,7 @@ thumbnail: /uploads/theatrenthumb.png
 main_image:
 short_description: Automated Document Creation
 layout: portfolio
-date:
+date: 2017-03-12 00:00:00
 ---
 
 
