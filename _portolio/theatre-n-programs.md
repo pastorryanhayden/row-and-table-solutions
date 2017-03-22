@@ -3,6 +3,8 @@ title: Theatre N Programs
 thumbnail: /uploads/theatrenthumb.png
 main_image:
 short_description: Automated Document Creation
+layout: portfolio
+date:
 ---
 
 
