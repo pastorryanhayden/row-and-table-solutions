@@ -1,7 +1,7 @@
 ---
 title: Theatre N Programs
 thumbnail: /uploads/theatrenthumb.png
-main_image:
+main_image: /uploads/theatnprogram.png
 short_description: Automated Document Creation
 layout: portfolio
 date: 2017-03-12 00:00:00
