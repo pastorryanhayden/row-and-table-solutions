@@ -29,7 +29,7 @@ keep_files:
 #Collections stuff:
 
 collections:
-  portolio:
+  portfolio:
     output: true
 
 
