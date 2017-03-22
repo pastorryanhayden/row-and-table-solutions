@@ -1,7 +1,7 @@
 ---
 title: Ryan Hayden
 thumbnail: /uploads/crmthumb.png
-main_image:
+main_image: /uploads/crm.png
 short_description: Custom CRM
 layout: portfolio
 date: 2017-02-12 00:00:00
