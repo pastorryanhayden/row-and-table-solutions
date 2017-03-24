@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 1029 494" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:1.41421;">
+    <g transform="matrix(1,0,0,1,-545.94,-511)">
+        <g id="row.26.table" transform="matrix(2.63497,0,0,2.49555,1061.71,897.965)">
+            <text x="-198.411px" y="0px" style="font-family:'Abside-Regular', 'Abside';font-size:44.542px;fill:white;">R<tspan x="-155.651px -108.259px " y="0px 0px ">OW</tspan></text>
+            <text x="-50.265px" y="0px" style="font-family:'Abside-Regular', 'Abside';font-size:44.542px;fill:rgb(253,132,69);">&amp;</text>
+            <text x="-9.198px" y="0px" style="font-family:'Abside-Regular', 'Abside';font-size:44.542px;fill:white;">T<tspan x="33.874px 81.222px 127.011px 167.944px " y="0px 0px 0px 0px ">ABLE</tspan></text>
+        </g>
+        <g id="solutions" transform="matrix(1.88677,0,0,1.88754,1061.71,1004.05)">
+            <text x="-104.629px" y="0px" style="font-family:'Gotham-Book', 'Gotham';font-weight:500;font-size:27.875px;fill:rgb(166,166,166);">S<tspan x="-81.771px -53.06px -31.345px -5.171px 17.91px 31.039px 59.75px 86.789px " y="0px 0px 0px 0px 0px 0px 0px 0px ">OLUTIONS</tspan></text>
+        </g>
+        <g id="Group-1" transform="matrix(1,0,0,1,21.2054,0)">
+            <path id="Rectangle-1-copy-2" d="M873,569.483L1031.32,569.483L1031.32,639.811L1016.89,654.273L1031.32,668.735L1031.32,728.134L962.513,728.134L962.513,679.882L941.532,679.882L941.532,728.134L873,728.134L873,569.483ZM962.513,600.591L941.532,600.591L941.532,640.271L962.513,640.271L962.513,600.591Z" style="fill:white;"/>
+            <path id="Rectangle-1-copy-5" d="M1163.23,572L1208,572L1208,640L1163.23,640L1163.23,730L1094.77,730L1094.77,640L1050,640L1050,572L1094.77,572L1094.77,571.844L1163.23,571.844L1163.23,572Z" style="fill:white;"/>
+            <rect id="Rectangle-1-copy-4" x="873" y="511" width="158.321" height="39.645" style="fill:rgb(253,132,69);"/>
+            <rect id="Rectangle-1-copy-6" x="1049.68" y="511" width="158.321" height="39.645" style="fill:rgb(253,132,69);"/>
+        </g>
+    </g>
+</svg>
