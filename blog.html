@@ -2,5 +2,51 @@
 layout: default
 ---
 
-<h4>The Blog is coming soon.</h4>
-<a href="{{site.url}}/" class="button">Return to Home Page</a> 
+<div class="blog-list">
+    <div class="blog-list__header">
+    <h3>Welcome to the Row and Table blog.</h3>
+    <h4>Our goal is that this blog will become a your goto rescource on the two things we know best: <br> <strong>airtable and websites.</strong></h4>
+    </div><!--/blog-list__header-->
+    <div class="latest-post">
+        {% for post in site.posts  limit: 1 %}
+        
+        <div class="featured_image">
+            <a href="{{post.url}}" class=""> <img src="{{post.featured_image}}"> </a>
+        </div><!--/featured_image-->
+        <div class="title_details">
+         <h3><a href="{{post.url}}">{{post.title}}</a></h3>
+         <p class="description">{{post.excerpt | strip_html | truncatewords: 25 }}</p>
+         <a href="{{post.url}}" class="button">Read Article</a>
+        </div><!--/title-details-->
+        {% endfor %}
+    </div><!--/latest-post-->
+    <div class="two-other-latest">
+        {% for post in site.posts limit: 2 offset: 1 %}
+        <div class="post">
+        <div class="featured_image">
+            <a href="{{post.url}}" class=""> <img src="{{post.featured_image}}"> </a>
+        </div><!--/featured_image-->
+        <div class="title_details">
+         <h3><a href="{{post.url}}">{{post.title}}</a></h3>
+         <p class="description">{{post.excerpt | strip_html | truncatewords: 25 }}</p>
+         <a href="{{post.url}}" class="button">Read Article</a>
+        </div><!--/title-details-->
+        </div><!--/post-->
+        {% endfor %} 
+    </div><!--/two-other-latest-->
+    <div class="post-list">
+        {% for post in site.posts offset:3 %}
+        <div class="post">
+            <div class="featured_image">
+            <a href="{{post.url}}" class=""> <img src="{{post.featured_image}}"> </a>
+            </div><!--/featured_image-->
+        <div class="title_details">
+         <h3><a href="{{post.url}}">{{post.title}}</a></h3>
+         <p class="description">{{post.excerpt | strip_html | truncatewords: 25 }}</p>
+         <a href="{{post.url}}" class="button">Read Article</a>
+        </div><!--/title-details-->
+        </div><!--/post--> 
+        {% endfor %}
+
+    </div><!--/post-list-->
+</div><!--/blog-list-->

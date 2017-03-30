@@ -1,0 +1,139 @@
+.blog-list
+    .blog-list__header
+        text-align: center
+        border-bottom: 4px dashed $main_bright_color
+        padding-bottom: 20px
+        margin-bottom: 30px
+        h3
+            font-family: $secondary-font
+            color: $main_bright_color
+        h4 strong 
+            color: $secondary_bright_color
+    .latest-post
+        +grid-row()
+        margin-bottom: 30px
+        .featured_image
+            +grid-column(12)
+            margin-bottom: 20px
+            +breakpoint(medium)
+                +grid-column(8)
+                margin-bottom: 0
+        .title_details
+            +grid-column(12)
+            +breakpoint(medium)
+                +grid-column(4)
+            h3 a
+                font-family: $secondary-font
+                color: $secondary_bright_color
+            a.button
+                background-color: $secondary_bright_color
+        
+    .two-other-latest
+        +grid-row()
+        margin-bottom: 60px
+        .post
+            +grid-column(12)
+            +breakpoint(medium)
+                +grid-column(6)
+            .featured_iamge
+                margin-bottom: 20px 
+            .title_details
+                h3 a
+                    font-family: $secondary-font
+                    color: $secondary_bright_color
+                a.button
+                    background-color: $secondary_bright_color
+
+    .post-list
+        .post
+            +grid-row()
+            margin-bottom: 30px
+            +breakpoint(medium)
+                border-bottom: 2px dashed $secondary_bright_color
+                &:last-child
+                    border-bottom: none 
+            .featured_image
+                +breakpoint(medium)
+                    +grid-column(2)
+                    min-height: 200px
+            .title_details
+                +breakpoint(medium)
+                    +grid-column(10)
+                h3 
+                    +breakpoint(medium)
+                        margin-top: -10px
+                h3 a
+                    font-family: $secondary-font
+                    color: $secondary_bright_color
+                a.button
+                    background-color: $secondary_bright_color
+.single-post
+    max-width: 800px
+    margin-left: auto
+    margin-right: auto
+    width: 100%
+    .post-header
+        margin-bottom: 40px
+        border-bottom: 2px solid $secondary_bright_color
+        text-align: center
+        h1 
+            color: $secondary_bright_color
+            font-family: $secondary-font
+    .featured_image
+        display: block 
+        width: 100%
+        margin-bottom: 30px
+
+    .post-content
+        h1, h2, h3, h4, p 
+            margin: 0
+        hr 
+            border-bottom: 1px solid $main_dark_color 
+            border-left: 0
+            border-right: 0
+            border-top: 0
+
+        h1, h2, h3, h4
+            text-align: center
+            font-family: $secondary_font
+            margin-top: 2em
+            margin-bottom: 1em
+        h1
+            font-size: 2em
+            color: $main_bright_color
+        h2
+            font-size: 1.8em
+            color: $secondary_bright_color
+        h3
+            font-size: 1.6em 
+            color: $secondary_bright_color
+        h4
+            font-size: 1.5em
+            color: $main_bright_color
+        p 
+            margin-bottom: 2em
+            font-size: 1.3em
+            line-height: 150%
+        strong
+            color: darken($secondary_bright_color, 20%)
+        img 
+            display: block 
+            max-width: 80%
+            margin-top: 2em
+            margin-bottom: 2em 
+            margin-left: auto
+            margin-right: auto
+        .callout 
+            background: lighten($secondary_bright_color, 50%)
+            width: 80%
+            margin-left: auto
+            margin-right: auto
+            p 
+                margin-bottom: 0
+                text-align: center
+        a 
+            color: darken($main_bright_color, 20%)
+            text-decoration: underline
+
+
+    
