@@ -37,7 +37,7 @@ P.S.  Even though it's easy, you'll find plenty of tutorials here.  Stay tuned.
 
 ![]({{site.url}}/uploads/powerful.gif)
 
-Just because Airtable is Fisher Price easy doesn't mean it's the database equivalent of my four year olds plastic workbench; **you can do real work on this thing**.  We have clients that have used Airtable to manage the sophisticated workflow of their video production team,  we have helped people setup industry specific CRMs with Airtable (that they've raved about), there are even people using Airtable to track their inventory.
+Just because Airtable is Fisher Price easy doesn't mean it's the database equivalent of my four year old's plastic workbench; **you can do real work on this thing**.  We have clients that have used Airtable to manage the sophisticated workflow of their video production team,  we have helped people setup industry specific CRMs with Airtable (that they've raved about), there are even people using Airtable to track their inventory.
 
 
 If you can dream it up, you can probably make it in Airtable. 
