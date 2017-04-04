@@ -12,5 +12,7 @@ excerpt: Our first video where we walk you through what Airtable is and what it 
 
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/sHPcyu64LyA" frameborder="0" allowfullscreen=""></iframe>
+<br>
+In [this video](https://youtu.be/sHPcyu64LyA) we explain what Airtable is, why you would want to use it, and how you can setup your own account.
 
-In this video we explain what Airtable is, why you would want to use it, and how you can setup your own account.
+[Watch it here](https://youtu.be/sHPcyu64LyA)
