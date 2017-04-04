@@ -14,7 +14,7 @@ excerpt:
 
 In these videos, we walk you through building a basic Airtable project that is both useful and powerful: A To Do List.
 
-But this isn't just ANY to do list, it's a to do list that...
+But this isn't just ANY to do list, it's a to do list that…
 
 * Is totally flexible
 * Can work with a "Trello" like kanban view.
@@ -39,11 +39,8 @@ Along the way you'll learn the basics of Airtable including:
 
 Check out the videos here:
 
-&nbsp;
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/venmlEhWbuc" frameborder="0" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/venmlEhWbuc" frameborder="0" allowfullscreen=""></iframe>
 
 <br>
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/yRFe3qwA5xg" frameborder="0" allowfullscreen></iframe>
-
+<iframe width="560" height="315" src="https://www.youtube.com/embed/yRFe3qwA5xg" frameborder="0" allowfullscreen=""></iframe>
