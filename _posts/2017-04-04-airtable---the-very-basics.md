@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Airtable - the very basics
-date:
+date: 2017-04-04 09:41:19
 categories:
   - airtable
   - Videos
