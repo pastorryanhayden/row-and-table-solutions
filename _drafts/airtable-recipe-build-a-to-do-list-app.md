@@ -40,3 +40,10 @@ Along the way you'll learn the basics of Airtable including:
 Check out the videos here:
 
 &nbsp;
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/venmlEhWbuc" frameborder="0" allowfullscreen></iframe>
+
+<br>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/yRFe3qwA5xg" frameborder="0" allowfullscreen></iframe>
+
