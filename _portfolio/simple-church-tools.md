@@ -1,7 +1,7 @@
 ---
 title: Simple Church Tools
-thumbnail:
-main_image:
+thumbnail: /uploads/screen-shot-2017-07-14-at-11-32-01-am.png
+main_image: /uploads/screen-shot-2017-07-14-at-11-31-39-am.png
 short_description: Software As A Service App
 layout: portfolio
 date: 2017-07-13 00:00:00
