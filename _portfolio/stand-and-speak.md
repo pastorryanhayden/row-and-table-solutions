@@ -1,7 +1,7 @@
 ---
 title: Stand and Speak
-thumbnail:
-main_image:
+thumbnail: /uploads/screen-shot-2017-07-14-at-11-45-51-am.png
+main_image: /uploads/screen-shot-2017-07-14-at-11-45-40-am.png
 short_description: 'Website Redesign, Airtable Integration'
 layout: portfolio
 date: 2017-07-12 00:00:00
