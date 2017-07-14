@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Jump Start an SAAS with Laravel Spark
-date:
+date: 2017-07-14 00:00:00
 categories:
   - airtable
 featured_image: /uploads/screen-shot-2017-07-14-at-12-15-31-pm.png
