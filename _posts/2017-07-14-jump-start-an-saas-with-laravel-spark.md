@@ -34,7 +34,10 @@ This saves you weeks of development time (i.e. thousands of dollars) and all of 
 You also get the full power of Laravel which is a great foundation for almost any kind of web app.
 
 You can view a video about Spark here:
-<br>&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/uOU_N8PNOD8" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
+<br>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/uOU_N8PNOD8" frameborder="0" allowfullscreen></iframe>
+
 <br>
 
 ## Our experience
