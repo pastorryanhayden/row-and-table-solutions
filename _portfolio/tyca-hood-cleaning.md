@@ -8,4 +8,8 @@ date: 2016-10-02 00:00:00
 ---
 
 
-Tyca Hood Cleaning is a small business servicing restaurants in Central Illinois.  They approached us to create a website for them.  We created a simple design and did the copywriting on their website.  We also created a custom map of their clients (managed in Airtable) to engender trust with prospective clients.
+Tyca Hood Cleaning is a local business that had never had a web presence.  They wanted a web site to potentially grow their business but were unsure about how successful it would be.
+
+We worked with the owners to write copy that would present their business well and then created a very simple marketing website that include a map of all of their existing clients.
+
+Shortly after going live, a national restaurant chain saw the website and offered them a regional contract, more than doubling the size of their business practically overnight.
