@@ -37,11 +37,15 @@ We made a simple design that matched the look of the IronMan challenge and only 
 
 The last problem we faced was do we make this as a website? a native app? just iOS? &nbsp;
 
-We decided to try a Progressive Web App. &nbsp;For those of you who don't know, a Progressive Web App (or PWA) is a website with special technologies that (among other things) let it function like a native app on mobile phones. &nbsp;When a user goes to a URL on their phone, they are prompted to install the app on their home screen and from that point, they seem just like a native app.
+We decided to try a [Progressive Web App](https://developers.google.com/web/progressive-web-apps/). &nbsp;For those of you who don't know, a Progressive Web App (or PWA) is a website with special technologies that (among other things) let it function like a native app on mobile phones. &nbsp;When a user goes to a URL on their phone, they are prompted to install the app on their home screen and from that point, they seem just like a native app.
 
 Native apps are expensive and its hard to keep up multiple code bases, in many cases, PWAs work just as well if not better and save some serious money. &nbsp;
 
-Conclusion
+## Conclusion
+
+We were able to create a completely custom app that will work on almost all mobile phones, be easier to install, save the Y staff time and provide a better experience for the challenge participants. &nbsp;We did it way under budget and on an extremely quick deadline.
+
+If you would like us to work with you and create a PWA for your business, call us for a free consultation at (877) 462-5160.
 
 &nbsp;
 
