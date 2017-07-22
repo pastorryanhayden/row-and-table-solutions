@@ -1,9 +1,11 @@
 ---
 layout: post
-title: A Custom App in a Weekend - The YMCA
-date: '2017-01-10 18:35:14 -0600'
-categories: airtable
-featured_image:
+title: A Custom App in a Weekend - The YMCA Challenge App
+date: 2017-07-21 00:00:00
+categories:
+  - airtable
+  - Progressive Web App
+featured_image: /uploads/screen-shot-2017-07-21-at-10-47-12-pm.png
 author: Ryan Hayden
 excerpt:
 ---
