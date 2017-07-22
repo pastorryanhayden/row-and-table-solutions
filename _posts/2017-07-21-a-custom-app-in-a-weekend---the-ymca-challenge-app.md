@@ -1,0 +1,50 @@
+---
+layout: post
+title: A Custom App in a Weekend - The YMCA Challenge App
+date: 2017-07-21 00:00:00
+categories:
+  - airtable
+  - Progressive Web App
+featured_image: /uploads/screen-shot-2017-07-21-at-10-47-12-pm.png
+author: Ryan Hayden
+excerpt:
+---
+
+
+I love the local YMCA.  I swim there every week and even fill in as a lifeguard once a month or so.  My kids are on the YMCA swim team (go Seals) and I've made a lot of friends there.
+
+One of my favorite things our Y does is called "The Ironman Challenge" - once a year you sign up to compete in a full Ironman.  The only catch is you have 8 weeks to do it.  The Ironman challenge was actually my first taste of Triathlons, and the thing that first got me into swimming.
+
+![](/uploads/versions/ironman-banner-980x543---x----980-543x---.png)
+
+So imagine my excitement when the Y contacted Row and Table and asked us to make them an app to automate and track the Ironman challenge.  The only catch - the Ironman challenge starts in two weeks.
+
+Here is what we came up with:
+
+## Airtable for administration
+
+![](/uploads/versions/screen-shot-2017-07-21-at-10-40-16-pm---x----2856-1972x---.png)
+
+We setup a simple Airtable base with three tables: A participants table for storing participants names, a four digit pin, and other details.  A workouts table tied to the participants for recording individual workouts with a time stamp, and a quote table.
+
+Airtable is perfect for something like this.  The front desk staff record information when a member signs up for the challenge, and the fitness director can easily add and change participants, update or correct a workout, etc. or add a motivational quote.
+
+## A Simple Design
+
+![](/uploads/versions/screen-shot-2017-07-21-at-10-47-12-pm---x----2790-1522x---.png)
+
+We made a simple design that matched the look of the IronMan challenge and only has three screens:  A sign in screen, a home screen that shows current progress, and a modal screen for recording workouts.  Users will immediately know where they stand and how much farther they have to go.
+
+## PWAs to the rescue
+
+The last problem we faced was do we make this as a website? a native app? just iOS?
+
+We decided to try a [Progressive Web App](https://developers.google.com/web/progressive-web-apps/).  For those of you who don't know, a Progressive Web App (or PWA) is a website with special technologies that (among other things) let it function like a native app on mobile phones.  When a user goes to a URL on their phone, they are prompted to install the app on their home screen and from that point, they seem just like a native app.
+
+Native apps are expensive and its hard to keep up multiple code bases, in many cases, PWAs work just as well if not better and save some serious money.
+
+## Conclusion
+
+We were able to create a completely custom app that will work on almost all mobile phones, be easier to install, save the Y staff time and provide a better experience for the challenge participants.  We did it way under budget and on an extremely quick deadline.
+
+If you would like us to work with you and create a PWA for your business, call us for a free consultation at (877) 462-5160.
