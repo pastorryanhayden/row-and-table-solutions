@@ -19,9 +19,15 @@ Here is what we came up with:
 
 Airtable for administration
 
+![](/uploads/versions/screen-shot-2017-07-21-at-10-40-16-pm---x----2856-1972x---.png)
+
 We setup a simple Airtable base with three tables: A participants table for storing participants names, a four digit pin, and other details. &nbsp;A workouts table tied to the participants for recording individual workouts with a time stamp, and a quote table.
 
-Airtable is perfect for something like this. &nbsp;The front desk staff record information when a member signs up for the challenge, and the fitness director can easily add and change participants.
+Airtable is perfect for something like this. &nbsp;The front desk staff record information when a member signs up for the challenge, and the fitness director can easily add and change participants, update or correct a workout, etc. or add a motivational quote.
+
+&nbsp;
+
+&nbsp;
 
 &nbsp;
 
