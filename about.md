@@ -3,10 +3,11 @@ layout: post
 title: About Us
 ---
 
-# Small and Scrappy
+# Our Team
 
-We are super small - currently just two full time employees.
 
+
+![](http://sitesforchurch.s3.amazonaws.com/profile-pic.JPG)
 ## Ryan Hayden
 ### Design and Customer Interaction
 
