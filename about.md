@@ -1,7 +1,7 @@
 ---
 layout: post
 title: About Us
-----
+---
 
 # Small and Scrappy
 
